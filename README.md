@@ -1,8 +1,13 @@
-# React + Vite
+## Домашня Робота з React, Redux Toolkit, Persist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Опис
 
-Currently, two official plugins are available:
+У цьому проекті міститься домашня робота з теми "Redux та Redux Toolkit". Додаток розроблено за допомогою бібліотек Redux та Redux Toolkit для керування глобальним станом додатка. Redux Toolkit надає зручні інструменти для швидкої розробки Redux-додатків, включаючи створення slices, редукторів та actions. У проекті використовується структура даних зберігання Redux store для ефективного керування станом додатка.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Основні функції
+
+Використання Redux для керування глобальним станом додатка.
+Використання Redux Toolkit для швидкої розробки Redux-додатків.
+Створення slices для розділення логіки Redux на більш малі та керовані частини.
+Визначення редукторів для обробки дій та змін стану в Redux store.
+Реалізація actions для виконання різних операцій з даними в Redux store.
