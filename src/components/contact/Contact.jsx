@@ -1,8 +1,16 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiUser } from "react-icons/hi";
 import css from "./Contact.module.css";
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contactsSlice";
 
-export default function Contact({ contact, onDelete }) {
+export default function Contact({ contact }) {
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(deleteContact(contact.id));
+  };
+
   return (
     <>
       <div className={css.wrapper}>
@@ -14,12 +22,7 @@ export default function Contact({ contact, onDelete }) {
         <div> {contact.number} </div>
       </div>
 
-      <button
-        className={css.btn}
-        onClick={() => {
-          onDelete(contact.id);
-        }}
-      >
+      <button className={css.btn} onClick={handleDelete}>
         Delete
       </button>
     </>
